@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>VISAIN · Herramientas de seminario</title>
+<meta name="description" content="Temporizador, ruleta, presentación con avatares, calculadora de bonos, catálogo y plan de compensación. Funciona sin internet.">
+<meta name="theme-color" content="#2d1066">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="VISAIN">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/hub.css">
+</head>
+<body>
+<div class="glow g1"></div><div class="glow g2"></div>
+<main class="hub">
+  <header>
+    <div class="logo"><img src="assets/img/logo.png" alt="VISAIN International"></div>
+    <h1>Herramientas de seminario</h1>
+    <p>Todo en una sola app. Funciona sin internet, en celular y computador.</p>
+  </header>
+
+  <nav class="grid" aria-label="Módulos">
+    <a class="card" href="modules/timer/">
+      <span class="ico">⏱</span>
+      <h2>Temporizador y ruleta</h2>
+      <p>Cuenta regresiva para el escenario, modo proyector, fondos del PDF oficial y ruleta de preguntas para jugar con el público.</p>
+      <span class="go">Abrir →</span>
+    </a>
+    <a class="card" href="modules/seminar/">
+      <span class="ico">🎬</span>
+      <h2>Seminario en vivo</h2>
+      <p>Presentación con avatares paso a paso, calculadora de bonos, catálogo editable y liquidación de producto.</p>
+      <span class="go">Abrir →</span>
+    </a>
+    <a class="card" href="modules/simulator/">
+      <span class="ico">🧮</span>
+      <h2>Simulador de ganancias</h2>
+      <p>Proyecta cuánto se gana mes a mes según membresía, red, recompras y ventas. Imprime o copia el resumen.</p>
+      <span class="go">Abrir →</span>
+    </a>
+    <a class="card" href="modules/plan-slides/">
+      <span class="ico">📊</span>
+      <h2>Plan de compensación</h2>
+      <p>20 diapositivas que explican el plan «masticado», con la conversión del descuento en puntos y notas para el presentador.</p>
+      <span class="go">Abrir →</span>
+    </a>
+  </nav>
+
+  <footer>
+    <span id="net" class="chip">● Comprobando…</span>
+    <span id="offl" class="chip">Preparando modo sin internet…</span>
+    <button id="install" class="chip btn" hidden>⬇ Instalar app</button>
+    <small>Versión <span id="ver"></span> · Los datos se guardan solo en este dispositivo.</small>
+  </footer>
+</main>
+<script src="js/register-sw.js"></script>
+<script src="js/hub.js"></script>
+</body>
+</html>
